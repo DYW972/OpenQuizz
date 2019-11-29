@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -27,19 +27,26 @@
                                 <rect key="frame" x="107" y="759" width="200" height="80"/>
                                 <color key="backgroundColor" red="0.36022168399999999" green="0.55637288090000003" blue="0.78482031819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="aR6-iA-kb3"/>
-                                    <constraint firstAttribute="width" constant="200" id="zUS-RM-ljM"/>
+                                    <constraint firstAttribute="height" constant="80" id="aR6-iA-kb3">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="zUS-RM-ljM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="400"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
                                 <state key="normal" title="New Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="46"/>
+                                </variation>
                                 <connections>
                                     <action selector="didTapNewGameBtn" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZy-uZ-50M"/>
                                 </connections>
                             </button>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="kdk-7w-yPJ">
-                                <rect key="frame" x="188.66666666666663" y="780.66666666666663" width="37" height="37"/>
+                                <rect key="frame" x="188.5" y="780.5" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="TgE-Os-hvo"/>
                                     <constraint firstAttribute="height" constant="37" id="iV7-an-vFO"/>
@@ -48,7 +55,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVY-HW-nTz">
                                 <rect key="frame" x="57" y="319" width="300" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="VOZ-R3-ORR"/>
+                                    <constraint firstAttribute="width" constant="300" id="VOZ-R3-ORR">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="600"/>
+                                    </constraint>
                                     <constraint firstAttribute="height" constant="60" id="WOB-3V-HBo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
@@ -59,21 +68,29 @@
                                         <exclude reference="VOZ-R3-ORR"/>
                                     </mask>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="60"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMD-ob-FQO" customClass="QuestionView" customModule="Open_Quizz" customModuleProvider="target">
-                                <rect key="frame" x="84.666666666666686" y="44" width="245" height="245"/>
+                                <rect key="frame" x="84.5" y="44" width="245" height="245"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Où se cache le marsupilami ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shK-ld-mMh">
                                         <rect key="frame" x="8" y="8" width="229" height="229"/>
                                         <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="23"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="46"/>
+                                        </variation>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon Correct" translatesAutoresizingMaskIntoConstraints="NO" id="NOZ-Bd-Igd">
-                                        <rect key="frame" x="104.33333333333333" y="189" width="35.999999999999986" height="35"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="Icon Correct" translatesAutoresizingMaskIntoConstraints="NO" id="NOZ-Bd-Igd">
+                                        <rect key="frame" x="104.5" y="189" width="36" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="NOZ-Bd-Igd" secondAttribute="height" multiplier="36:35" id="fia-d9-VNt"/>
-                                            <constraint firstAttribute="width" constant="36" id="leD-eC-cJx"/>
+                                            <constraint firstAttribute="width" constant="36" id="leD-eC-cJx">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="72"/>
+                                            </constraint>
                                         </constraints>
                                     </imageView>
                                 </subviews>
@@ -81,7 +98,9 @@
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="shK-ld-mMh" secondAttribute="bottom" constant="8" id="AiO-nF-Sw6"/>
                                     <constraint firstAttribute="trailing" secondItem="shK-ld-mMh" secondAttribute="trailing" constant="8" id="FVQ-1T-u9F"/>
-                                    <constraint firstAttribute="width" constant="245" id="Pmo-ma-8dm"/>
+                                    <constraint firstAttribute="width" constant="245" id="Pmo-ma-8dm">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="480"/>
+                                    </constraint>
                                     <constraint firstAttribute="width" secondItem="AMD-ob-FQO" secondAttribute="height" multiplier="1:1" id="QR5-Nb-FTR"/>
                                     <constraint firstAttribute="bottom" secondItem="NOZ-Bd-Igd" secondAttribute="bottom" constant="21" id="aMj-wU-LBo"/>
                                     <constraint firstItem="shK-ld-mMh" firstAttribute="top" secondItem="AMD-ob-FQO" secondAttribute="top" constant="8" id="hDQ-0R-fw6"/>
