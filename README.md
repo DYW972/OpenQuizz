@@ -1,2 +1,2 @@
 # Open-Quizz
-Fourth project of iOS Dev path with OpenClassrooms
+An exercice during Fourth project course of iOS Dev path with OpenClassrooms
